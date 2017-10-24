@@ -1,6 +1,7 @@
 import fresh_tomatoes
 from media import Movie
 
+# create movies date
 toy_story = Movie('玩具总动员',
                   '牛仔警长胡迪和太空骑警巴斯光年的故事。',
                   'https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=77119894c9fcc3ceb4c0ce35aa7eb1b5/d62a6059252dd42a1835151d023b5bb5c9eab843.jpg',
@@ -26,6 +27,8 @@ bad_genius = Movie('Bad Genius',
                    'https://img3.doubanio.com/view/photo/l/public/p2501863104.jpg',
                    'https://www.youtube.com/watch?v=3PsUJFEBC74')
 
-
+# save movies into a list
 movies = [toy_story, avatar, pirates_caribbean, bad_genius, school_of_rock, bad_genius]
+
+# use fresh_tomatoes to open movie page
 fresh_tomatoes.open_movies_page(movies)
